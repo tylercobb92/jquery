@@ -7,7 +7,16 @@
     <title>Movies App</title>
 </head>
 <body>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <h1>Movie Rankings</h1>
+    <form action="submit">
+        <input type="text" id="movie-name" placeholder="Movie Title">
+        <input type="number" id="movie-rating" max="5" min="0" placeholder="Rating 1-5">
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    <div id='movie-list'>
+        <ul></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
